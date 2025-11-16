@@ -22,7 +22,7 @@ foreach($rows as $row){
         array_push($products, new Notebook($row['id'],$row['title'],$row['price']));
     }
 }
-// var_dump($products);
+
 ?><!DOCTYPE html>
 
 <html lang="fa" dir="rtl">

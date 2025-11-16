@@ -20,4 +20,4 @@ $pdo = new PDO($dsn, $user, $pass, $options);
 $stmt = $pdo->query('SELECT id, title, price, type FROM products');
 $rows = $stmt->fetchAll();
 
-var_dump($rows);
+
