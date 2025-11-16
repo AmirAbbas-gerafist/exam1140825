@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=0);
 
 /**
  * Simple PDO connection and product fetch.
@@ -19,3 +19,5 @@ $pdo = new PDO($dsn, $user, $pass, $options);
 
 $stmt = $pdo->query('SELECT id, title, price, type FROM products');
 $rows = $stmt->fetchAll();
+
+var_dump($rows);
